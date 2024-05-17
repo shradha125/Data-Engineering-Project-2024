@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .header {
+            margin-bottom: 70px;
+            font-size: 40px;
+            color: #202124;
+        }
+        .search-bar {
+            width: 70%;
+            min-width: 350px;
+        }
+        .form-group {
+            display: flex;
+            justify-content: center;
+        }
+        .form-control {
+            width: 100%;
+            border: 1px solid #dfe1e5;
+            box-shadow: none;
+            font-size: 25px;
+            height: 60px;
+            padding: 10px 20px;
+            border-radius: 24px;
+        }
+        .btn {
+            margin-left: 10px;
+            height: 60px;
+            background: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 0 25px;
+            cursor: pointer;
+            transition: box-shadow 0.3s;
+        }
+        .btn:hover {
+            box-shadow: 0 1px 6px rgba(26,115,232,0.5);
+        }
+        .image-container {
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="static\images\Bot.png" alt="Bot Image">
+        </div>
+        <div class="header">Welcome to My Custom Search</div>
+        <form action="/" method="post" class="search-bar">
+            <div class="form-group">
+                <input type="text" class="form-control" id="search" name="search" placeholder="Search..." required>
+                <button type="submit" class="btn">Search</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
